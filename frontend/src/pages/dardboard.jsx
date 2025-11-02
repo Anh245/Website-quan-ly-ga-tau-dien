@@ -4,7 +4,8 @@ import {
   Calendar, 
   TrendingUp,
   Clock,
-  AlertCircle
+  AlertCircle,
+  Sidebar
 } from 'lucide-react'
 
 // --- Dữ liệu giả (Mock Data) ---
@@ -110,9 +111,10 @@ const Dashboard = () => {
 
   return (
     // ## Layout chính với nền và padding
-    <main className="bg-slate-100 dark:bg-slate-900 min-h-screen p-4 sm:p-6 lg:p-8">
+    <main className="bg-slate-100 dark:bg-slate-900 min-h-screen p-4 sm:p-6 lg:p-8 w-full">
+      <Sidebar/>
       <div className="max-w-full w-full space-y-8">
-        
+
         {/* Header */}
         <div>
           <h1 className="text-3xl font-bold text-slate-900 dark:text-slate-100">Dashboard</h1>
